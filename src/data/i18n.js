@@ -5,13 +5,9 @@ import 'intl/locale-data/jsonp/en'
 import de from 'react-intl/locale-data/de'
 import 'intl/locale-data/jsonp/de'
 
-const locales = ['en', 'de'] // Current locales in use
-
 
 // Add concatenated locale data
 addLocaleData([...en, ...de])
 
-export default {
-	locales,
-	defaultLocale: 'en',
-}
+export const locales = ['en', 'de'] // Current locales in use
+export const defaultLocale = 'en'
